@@ -55,6 +55,19 @@
 
 <script>
 
+  const nav = document.querySelector("#main");
+
+  const topOfNav = nav.offsetTop; // it gives the top of the navbar
+
+  function fixNav() {
+
+    console.log(topOfNav, window.scrollY) // window.scrollY shows how far we've scrolled down
+  }
+
+
+
+  window.addEventListener("scroll", fixNav);
+
 </script>
 
 </body>
